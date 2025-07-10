@@ -7,13 +7,19 @@ function App() {
   const [selectedChat, setSelectedChat] = useState([]);
 
   return (
-    <div className="flex w-full h-screen">
-      <div className="w-1/3 min-h-screen bg-[#1B1A1F] text-white overflow-y-auto scrollbar-hide">
+    <div className="flex w-screen h-screen overflow-hidden">
+      {/* Chat List */}
+      <div className="md:w-1/3 sm:w-1/2 w-full min-h-screen bg-[#1B1A1F] text-white overflow-y-auto scrollbar-hide">
         <ChatList onSelectChat={setSelectedChat} selectedChat={selectedChat} />
       </div>
-      <div className="w-2/3 min-h-screen bg-[#060607] text-white overflow-y-auto scrollbar-hide">
+
+      {/* Chat View */}
+      <div className="md:w-2/3 sm:w-1/2 w-full min-h-screen bg-[#060607] text-white hidden sm:block">
         {selectedChat ? (
-          <ChatView chat={selectedChat} />
+          <ChatView
+            chat={selectedChat}
+            onBack={() => setSelectedChat(null)} // optional back button for mobile
+          />
         ) : (
           <div className="flex flex-col justify-center items-center h-full text-center px-4">
             <div className="text-4xl mb-4">📦 Postbox</div>

@@ -9,12 +9,12 @@ const MessageInput = () => {
 
   return (
     <div className="flex gap-3 items-center justify-between">
-      <div className="flex w-full bg-gray-50/10 justify-between items-center rounded-2xl px-2 py-1 5">
+      <div className="flex w-full bg-gray-50/10 justify-between items-center rounded-2xl px-2 py-1">
         <input
           type="text"
           name="message"
           id="message"
-          className="w-full mx-2 h-[45px] outline-0 border-0"
+          className="w-full sm:mx-2 mx-1 h-[45px] outline-0 border-0"
           placeholder="Type a message"
         />
         <div className="flex gap-3">

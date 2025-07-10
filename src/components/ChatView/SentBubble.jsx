@@ -1,18 +1,31 @@
-const SentBubble = () => {
+const SentBubble = ({ message }) => {
   return (
-    <div className="flex gap-2 items-end absolute right-0 bottom-0 max-w-1/3">
-      <div className="bg-gray-200/20 flex flex-col gap-1 p-3 rounded-l-xl rounded-t-xl relative text-sm text-white">
-        <span>Sent message here...</span>
+    <div className="flex my-4 items-end justify-end w-full">
+      <div className="flex items-end gap-2 max-w-[70%]">
+        <div className="bg-[#2a2a2a] text-white text-sm p-3 rounded-l-xl rounded-t-xl flex flex-col relative">
+          <span>{message.text}</span>
 
-        <div className="text-blue-500 text-[10px] flex justify-end">
-          <span>Delevered</span>
+          {/* Time + Status */}
+          <div className="flex justify-end items-center gap-2 mt-1 text-[10px] text-gray-400">
+            <span>{message.time}</span>
+            {message.status === "sent" && (
+              <span className="text-gray-400">✔</span>
+            )}
+            {message.status === "delivered" && (
+              <span className="text-blue-400">✔✔</span>
+            )}
+            {message.status === "seen" && (
+              <span className="text-green-400 font-semibold">✔✔</span>
+            )}
+          </div>
         </div>
+
+        <img
+          src="/dp.jpg"
+          alt="Profile"
+          className="w-8 h-8 rounded-full object-cover border-2 border-white"
+        />
       </div>
-      <img
-        src="/dp.jpg"
-        alt="Profile"
-        className="w-8 h-8 rounded-full object-cover border-2 border-white"
-      />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import TypingText from "./TypingText";
 const ChatCard = ({ chat, isActive }) => {
   return (
     <div
-      className={`p-2 flex justify-between items-start my-3 rounded-lg cursor-pointer transition-all
+      className={`p-2 flex justify-between items-start my-1 rounded-lg cursor-pointer transition-all
       ${isActive ? "bg-[#2a2aff]/10" : "hover:bg-white/5"}`}
     >
       {/* Avatar + Info */}

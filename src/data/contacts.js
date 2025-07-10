@@ -1,0 +1,51 @@
+export const Contacts = [
+  {
+    id: 1,
+    name: "Aarav Mehta",
+    avatar: "https://i.pravatar.cc/150?img=11",
+    bio: "Frontend Developer at CodeCraft",
+    phone: "945639484",
+  },
+  {
+    id: 2,
+    name: "Sneha Rao",
+    avatar: "https://i.pravatar.cc/150?img=32",
+    bio: "UI/UX Designer • Coffee lover ☕",
+    phone: "9498726534",
+  },
+  {
+    id: 3,
+    name: "Ravi Gupta",
+    avatar: "https://i.pravatar.cc/150?img=18",
+    bio: "Full Stack Engineer | Open Source Contributor",
+    phone: "923154766",
+  },
+  {
+    id: 4,
+    name: "Tanvi Sharma",
+    avatar: "https://i.pravatar.cc/150?img=45",
+    bio: "Building apps at MindSpark 🚀",
+    phone: "912345678",
+  },
+  {
+    id: 5,
+    name: "Karthik Bhandari",
+    avatar: "https://i.pravatar.cc/150?img=25",
+    bio: "Tech enthusiast and backend wizard",
+    phone: "8562341986",
+  },
+  {
+    id: 6,
+    name: "Bhagya Shetty",
+    avatar: "https://i.pravatar.cc/150?img=42",
+    bio: "Let life happen",
+    phone: "8945386126",
+  },
+  {
+    id: 7,
+    name: "Bhavesh Joshi",
+    avatar: "https://i.pravatar.cc/150?img=38",
+    bio: "Say my name",
+    phone: "987654321",
+  },
+];
